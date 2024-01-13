@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="60dp"
+        android:src="@drawable/img"
+        android:layout_marginStart="15dp"
+        android:id="@+id/errow"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Naseeb Sultan . Facebook"
+        android:layout_marginHorizontal="50dp"
+
+        android:textStyle="bold"
+        android:textSize="14sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change password"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@+id/txt1"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="20sp"
+        android:id="@+id/txt2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="your password must be at least six characters and should include a combination of numbers , lettrers and special characters (!$@%)"
+
+        android:layout_below="@+id/txt2"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="14sp"
+        android:id="@+id/txt3"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txt3"
+        android:layout_marginHorizontal="50dp"
+        app:cardElevation="40dp"
+        app:cardCornerRadius="10dp"
+
+        android:layout_marginVertical="20dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="current password"
+            android:textColorHint="#8C8A8A"
+            android:background="@drawable/edit_bg"
+            android:paddingStart="10dp"
+            android:id="@+id/edit1"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/card1"
+        android:layout_marginHorizontal="50dp"
+        app:cardElevation="40dp"
+        app:cardCornerRadius="10dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="New password"
+            android:textColorHint="#8C8A8A"
+            android:background="@drawable/edit_bg"
+            android:paddingStart="10dp"
+            android:id="@+id/edit2"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/card2"
+        android:layout_marginHorizontal="50dp"
+        app:cardElevation="40dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginVertical="20dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Retype new password"
+            android:textColorHint="#8C8A8A"
+            android:background="@drawable/edit_bg"
+            android:paddingStart="10dp"
+            android:id="@+id/edit3"/>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgeotten your password?"
+        android:id="@+id/txt4"
+        android:layout_below="@+id/card3"
+        android:textColor="#1B32B1"
+        android:layout_marginHorizontal="50dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="16sp"/>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:id="@+id/view"
+    android:layout_below="@+id/txt4"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/view">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="40dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:text="change password"
+            android:textStyle="bold" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>
+
+</LinearLayout>
